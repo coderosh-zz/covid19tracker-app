@@ -36,7 +36,7 @@ class App {
       return (document.querySelector('.results').innerHTML = '')
 
     const lists = datas.filter(data => {
-      let cname = data.name.toLowerCase()
+      let cname = data.name.toString().toLowerCase()
       return cname.includes(inputValue)
     })
 
